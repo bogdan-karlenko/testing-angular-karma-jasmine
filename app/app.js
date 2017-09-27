@@ -2,9 +2,9 @@
   'use strict';
 
   angular.module('t-a-k-j', [
-      'ui.router'
+      // 'ui.router'
     ])
-    .config(function($urlRouterProvider) {
-      $urlRouterProvider.otherwise("/");
-    });
+    // .config(function($urlRouterProvider) {
+    //   $urlRouterProvider.otherwise("/");
+    // });
 })();

@@ -1,5 +1,14 @@
 describe('User control module', function() {
-  it('has a dummy spec to test 2 + 2', function() {
-    expect(2+2).toEqual(4);
+  var Users;
+
+  beforeEach(angular.mock.module('api.users'));
+
+  beforeEach(inject(function(_Users_) {
+    Users = _Users_;
+  }));
+
+  it('should exist', function() {
+    expect(Users).toBeDefined();
   });
+
 });
